@@ -1,0 +1,1 @@
+// timeline.js - module placeholder

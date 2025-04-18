@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeonDAW ProTools Edition</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="top-bar">
+      <h1>🎚 NeonDAW Pro</h1>
+      <div id="transport-controls">
+        <button id="play">▶️</button>
+        <button id="stop">⏹</button>
+        <button id="record">🔴</button>
+        <input type="range" id="tempo-slider" min="60" max="180" value="120">
+        <span id="tempo-display">120 BPM</span>
+      </div>
+    </header>
+    <main id="main-ui">
+      <aside id="left-sidebar">
+        <button id="add-track-btn">➕ Add Track</button>
+        <div id="track-list"></div>
+      </aside>
+      <section id="timeline-panel">
+        <div id="timeline-tracks"></div>
+      </section>
+      <section id="mixer">
+        <div id="mixer-controls"></div>
+      </section>
+    </main>
+    <footer>
+      <button id="save-project">💾 Save</button>
+      <button id="load-project">📂 Load</button>
+    </footer>
+  </div>
+
+  <!-- JS Modules -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
